@@ -209,20 +209,21 @@ footer>div>ul>li>a:hover{
 
 .precio2{
     position: absolute;
-    left: -20px;
+    left: 13px;
 }
 
 .box-ropa {
-    position: absolute; /* Establece la posición absoluta */
+    position: absolute; 
     left: 12px;
-    right: 12px;/* Establece el ancho al 100% del contenedor padre */
-    z-index: 1; /* Lo coloca en la parte inferior del contenedor padre */
+    right: 12px;
+    z-index: 1;
     background: #fff;
     padding: 10px;
     display: flex;
     flex-direction: column;
     display: none;
-    transition: .2s;
+   
+   
     
     
     
