@@ -42,6 +42,7 @@ header {
 
 
 
+
 nav>ul {
     display: flex;
     justify-content: flex-end;
@@ -202,8 +203,9 @@ footer>div>ul>li>a:hover{
    color: var(--link);
 }
 
-.ti-shopping-cart::before{
+.ti-shopping-cart,.ti-heart,.ti-eye{
     font-size: 17px;
+    color: #fff;
 }
 
 
@@ -231,16 +233,17 @@ footer>div>ul>li>a:hover{
 
 .circle-container>div{
     border-radius: 100%;
-    background: var(--precio);
+    background: #333333;
     padding: 14px;
     display: flex;
     flex-direction: column;
+    cursor: pointer;
 
     
 }
 
 .box-ropa>h7{
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 600;
 }
 
@@ -249,8 +252,10 @@ footer>div>ul>li>a:hover{
     justify-content: space-evenly;
 }
  
-    
-    
+#menu{
+    display: none;
+}
+  
         
 
 
@@ -295,7 +300,8 @@ footer>div>ul>li>a:hover{
         font-size: 15px;
         
     }
-      
+
+   
 }
 
 
@@ -307,6 +313,7 @@ footer>div>ul>li>a:hover{
     
 
     #menu{
+        display: block ;
         transition: .3s;
         background: rgba(255, 255, 255, 0.5);
         backdrop-filter: blur(10px);
@@ -320,6 +327,9 @@ footer>div>ul>li>a:hover{
        
     }
 
+    #menu2{
+        display: none;
+    }
 
     header{
         height: 50vh;
