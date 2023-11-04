@@ -25,8 +25,10 @@
 
         <nav id="menu" class="container-fluid menu">
             <ul>
-                <li><a href="#">Hombre
-                    </a><i class="ti ti-chevron-down"></i></li>
+                <li>
+                    <a href="#">Hombre</a>
+                    <i class="ti ti-chevron-down"></i>
+                   
                 <li><a href="#">Mujer </a><i class="ti ti-chevron-down"></i> </li>
                 <li><a href="#">Nosotros</a><i class="ti ti-chevron-down"></i></li>
                 <li><a href="#">Novedades</a><i class="ti ti-chevron-down"></i></li>
@@ -38,8 +40,33 @@
 
         <nav id="menu2" class="container-fluid menu">
             <ul>
-                <li><a href="#">Hombre
-                    </a><i class="ti ti-chevron-down"></i></li>
+                <li class="position-relative">
+                    <a  onmouseover="mostrarHombre(this)"   id="link-hombre" href="#">Hombre</a><i class="ti ti-chevron-down"></i>
+                    <div onmouseleave="ocultarHombre(this)" id="menu-hombre" class="menu-hombre p-3 mt-1 shadow">
+                        <div class="d-flex justify-content-around mt-3">
+                            <ul>
+                                <li>Casual<i class="ti ti-chevron-down"></i></li>
+                                <li>Abrigos</li>
+                                <li>Deportivo</li>
+                                <li>Pantalones</li>
+                                <li>Remeras</li>
+                            </ul>
+                            <ul>
+                                <li>Formal<i class="ti ti-chevron-down"></i></li>
+                                <li>Chaquetas</li>
+                                <li>Camisetas</li>
+                                <li>Trajes</li>
+                                <li>Pantalones</li>
+                            </ul>
+                        </div>
+                        <div class="ofertas mt-3 p-3">
+                            <h2 class="">Ofertas de invierno</h2>
+                            <p class="m-0">Desde el 50% de Descuento</p>
+                        </div>
+                    </div>
+                </li>
+                
+                </li>
                 <li><a href="#">Mujer </a><i class="ti ti-chevron-down"></i> </li>
                 <li><a href="#">Nosotros</a><i class="ti ti-chevron-down"></i></li>
                 <li><a href="#">Novedades</a><i class="ti ti-chevron-down"></i></li>

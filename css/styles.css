@@ -8,6 +8,7 @@
     --linkHover: #00c8c8;
     --footer: #f8f8f8;
     --precio : #605959d7;
+    --box-link : #ababab;
 }
 
 .container {
@@ -256,8 +257,34 @@ footer>div>ul>li>a:hover{
     display: none;
 }
   
-        
+.menu-hombre{
+    position: absolute;
+    left: -24px;
+    width: 390px;
+    background: #fff;
+    display: none;
+    
+}
 
+.menu-hombre>div>ul>li{
+    margin-bottom: 20px;
+    font-size: 15px;
+    color: var(--box-link);
+}
+
+.menu-hombre>div>ul>li:first-child{
+    color: var(--link);
+    font-weight: 700;
+}
+
+.ofertas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #333333;
+    color: #fff;
+}
 
 
 @media screen and (max-width:1216px){

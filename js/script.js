@@ -1,6 +1,8 @@
 
 
 let menu = document.getElementById('menu');
+let menuHombre = document.getElementById('menu-hombre');
+
 
 
 
@@ -27,12 +29,14 @@ function mostrarCaja(bxRopaId, imagenID) {
     bxRopa.style.display = 'flex';
     imagen.classList.add('shadow');
     let shop = document.getElementsByClassName('ti-shopping-cart'); 
+}
+
+
    
 
 
 
 
-}
 
 
 function cerrarCaja(bxRopaId, imagenID) {
@@ -43,3 +47,10 @@ function cerrarCaja(bxRopaId, imagenID) {
 
 }
 
+function mostrarHombre(linkHombre){
+    menuHombre.style.display = 'block';
+}
+
+function ocultarHombre(menuHombre){
+    menuHombre.style.display = 'none';
+}
