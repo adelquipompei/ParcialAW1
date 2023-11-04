@@ -6,6 +6,7 @@ let menuHombre = document.getElementById('menu-hombre');
 
 
 
+
 function mostrarMenu() {
 
     menu.style.width = '100%';
@@ -31,14 +32,6 @@ function mostrarCaja(bxRopaId, imagenID) {
     let shop = document.getElementsByClassName('ti-shopping-cart'); 
 }
 
-
-   
-
-
-
-
-
-
 function cerrarCaja(bxRopaId, imagenID) {
     let bxRopa = document.getElementById(bxRopaId)
     let imagen = document.getElementById(imagenID)
@@ -47,10 +40,10 @@ function cerrarCaja(bxRopaId, imagenID) {
 
 }
 
-function mostrarHombre(linkHombre){
+function mostrarHombre(){
     menuHombre.style.display = 'block';
 }
 
-function ocultarHombre(menuHombre){
+function ocultarHombre(){
     menuHombre.style.display = 'none';
 }
