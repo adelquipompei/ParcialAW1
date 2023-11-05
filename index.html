@@ -40,9 +40,10 @@
 
         <nav id="menu2" class="container-fluid menu">
             <ul>
-                <li onmouseover="mostrarHombre()" onmouseleave="ocultarHombre()" class="position-relative">
+                <li onmouseover="mostrarMenuGenero('hombre')" onmouseleave="ocultarMenuGenero('hombre')" class="position-relative ">
                     <a  id="link-hombre" href="#">Hombre</a><i class="ti ti-chevron-down"></i>
-                    <div  id="menu-hombre" class="menu-hombre p-3 shadow">
+                   <div class="separador-invisible"></div>
+                    <div  id="hombre" class="menu-hombre p-3  shadow">
                         <div class=" d-flex justify-content-around mt-3">
                             <ul>
                                 <li>Casual<i class="ti ti-chevron-down"></i></li>
@@ -67,12 +68,39 @@
                 </li>
                 
                 </li>
-                <li><a href="#">Mujer </a><i class="ti ti-chevron-down"></i> </li>
-                <li><a href="#">Nosotros</a><i class="ti ti-chevron-down"></i></li>
-                <li><a href="#">Novedades</a><i class="ti ti-chevron-down"></i></li>
-                <li><a href="#">Contacto</a><i class="ti ti-chevron-down"></i></li>
-                <input class="d-lg-flex d-none" type="search" placeholder=" Buscar...">
+                <li onmouseover="mostrarMenuGenero('mujer')" onmouseleave="ocultarMenuGenero('mujer')" class="position-relative">
+                    <a  id="link-hombre" href="#">Mujer</a><i class="ti ti-chevron-down"></i>
+                    <div class="separador-invisible"></div>
+                    <div  id="mujer" class="menu-hombre p-3 shadow">
+                        <div class=" d-flex justify-content-around mt-3">
+                            <ul>
+                                <li>Casual<i class="ti ti-chevron-down"></i></li>
+                                <li>Remeras</li>
+                                <li>Bikinis</li>
+                                <li>Juvenil</li>
+                                <li>Deportivo</li>
+                            </ul>
+                            <ul>
+                                <li>Formal/Noche<i class="ti ti-chevron-down"></i></li>
+                                <li>Vestidos</li>
+                                <li>Accesorios</li>
+                                <li>Trajes</li>
+                                <li>Nueva Temporada</li>
+                            </ul>
+                        </div>
+                        <div class="ofertas mt-3 p-3">
+                            <h2 class="">Ofertas de invierno</h2>
+                            <p class="m-0">Desde el 50% de Descuento</p>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">Nosotros</a><i class="ti ti-chevron-down"></i><div class="separador-invisible"></div></li>
+                <li><a href="#">Novedades</a><i class="ti ti-chevron-down"></i><div class="separador-invisible"></div></li>
+                <li><a href="#">Contacto</a><i class="ti ti-chevron-down"></i><div class="separador-invisible"></div></li>
+                
+                <input class="d-lg-flex d-none pb-1" type="search" placeholder=" Buscar...">
                 <label for="search"><i class="ti ti-search d-lg-flex d-none"></i></label>
+                <div class="separador-invisible"></div>
             </ul>
         </nav>
 
@@ -117,7 +145,7 @@
                                 <p class="precio d-none d-md-block p-2">$17.000</p>
                                 <img id="img2" class="w-100" src="img/item-2.png" alt="">
                                 <div id="bx-ropa2" class="box-ropa shadow">
-                                    <h7 class="text-center p-3">Blazer Mujer $30.000</h7>
+                                    <h7 class="text-center p-3">Pantalon Ancho Mujer $17.000</h7>
                                     <div class="circle-container p-3">
                                         <div class=""><i class=" shop ti ti-shopping-cart"></i></div>
                                         <div class=""><i class="ti ti-heart"></i></div>
@@ -129,11 +157,11 @@
                             <div id="img3" onmouseover="mostrarCaja('bx-ropa3','img3')"
                                 onmouseout="cerrarCaja('bx-ropa3','img3')" style="left: 0;"
                                 class="col-12 mt-4 d-flex justify-content-center position-relative">
-                                <p class="precio precio2 d-none d-md-block p-2">$30.000</p>
+                                <p class="precio precio2 d-none d-md-block p-2">$6.900</p>
                                 <img class="img-r" style="width: 63.5%;" src="img/item-3.png" alt="">
                                 <div id="bx-ropa3" style="position: absolute;left: 0;right: 0;bottom: -154.5px;"
                                     class="box-ropa  shadow">
-                                    <h7 class="text-center p-3">Blazer Mujer $30.000</h7>
+                                    <h7 class="text-center p-3">Remera Hombre $6.900</h7>
                                     <div class="circle-container p-3">
                                         <div class=""><i class="ti ti-shopping-cart"></i></div>
                                         <div class=""><i class="ti ti-heart"></i></div>
@@ -150,11 +178,11 @@
                             <div class="img-container col-12 position-relative"
                                 onmouseover="mostrarCaja('bx-ropa4','img4')" onmouseout="cerrarCaja('bx-ropa4','img4')">
                                 <p class="precio d-none d-md-block p-2">
-                                    <s class="mx-1">$50.000</s>$47.000
+                                    <s class="mx-1">$50.000</s>$42.900
                                 </p>
                                 <img id="img4" class="w-100" src="img/item-4.png" alt="">
                                 <div id="bx-ropa4" class="box-ropa  shadow">
-                                    <h7 class="text-center p-3">Blazer Mujer $30.000</h7>
+                                    <h7 class="text-center p-3">Campera Hombre $42.900</h7>
                                     <div class="circle-container p-3">
                                         <div class=""><i class="ti ti-shopping-cart"></i></div>
                                         <div class=""><i class="ti ti-heart"></i></div>
@@ -168,7 +196,7 @@
                                 <p class="precio d-none d-md-block p-2">$12.700</p>
                                 <img id="img5" class="w-100" src="img/item-5.png" alt="">
                                 <div id="bx-ropa5" class="box-ropa shadow" style="position: absolute;">
-                                    <h7 class="text-center p-3">Blazer Mujer $30.000</h7>
+                                    <h7 class="text-center p-3">Jean Mujer $12.700</h7>
                                     <div class="circle-container p-3">
                                         <div class=""><i class="ti ti-shopping-cart"></i></div>
                                         <div class=""><i class="ti ti-heart"></i></div>
@@ -182,7 +210,7 @@
                                 <p class="precio d-none d-md-block p-2">$3.700</p> 
                                 <img id="img6" class="w-100" src="img/item-6.png" alt="">
                                 <div id="bx-ropa6" class="box-ropa shadow" style="position: absolute;">
-                                    <h7 class="text-center p-3">Blazer Mujer $30.000</h7>
+                                    <h7 class="text-center p-3">Remera Mujer $3.700</h7>
                                     <div class="circle-container p-3">
                                         <div class=""><i class="ti ti-shopping-cart"></i></div>
                                         <div class=""><i class="ti ti-heart"></i></div>

@@ -47,7 +47,7 @@ header {
 nav>ul {
     display: flex;
     justify-content: flex-end;
-    align-items: center;
+    align-items: baseline;
 }
 
 nav>ul>li {
@@ -96,13 +96,15 @@ input {
 
 .ti-search {
     position: absolute;
-    top: -9px;
+    top: -13px;
     left: -26px;
     width: 20px;
     color: var(--link);
     cursor: pointer;
 
 }
+
+
 
 label {
     position: relative;
@@ -257,6 +259,10 @@ footer>div>ul>li>a:hover {
 
 #menu {
     display: none;
+}
+
+.separador-invisible{
+    padding-bottom: 10px;
 }
 
 .menu-hombre {

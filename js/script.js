@@ -1,7 +1,7 @@
 
 
 let menu = document.getElementById('menu');
-let menuHombre = document.getElementById('menu-hombre');
+//let menuHombre = document.getElementById('menu-hombre');
 
 
 
@@ -40,10 +40,12 @@ function cerrarCaja(bxRopaId, imagenID) {
 
 }
 
-function mostrarHombre(){
-    menuHombre.style.display = 'block';
+function mostrarMenuGenero(id){
+    let menuBox = document.getElementById(id);
+    menuBox.style.display = 'block';
 }
 
-function ocultarHombre(){
-    menuHombre.style.display = 'none';
+function ocultarMenuGenero(id){
+    let menuBox = document.getElementById(id);
+    menuBox.style.display = 'none';
 }
