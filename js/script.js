@@ -49,3 +49,4 @@ function ocultarMenuGenero(id){
     let menuBox = document.getElementById(id);
     menuBox.style.display = 'none';
 }
+
