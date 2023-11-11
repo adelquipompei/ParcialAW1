@@ -48,5 +48,23 @@ function mostrarMenuGenero(id){
 function ocultarMenuGenero(id){
     let menuBox = document.getElementById(id);
     menuBox.style.display = 'none';
+  
+}
+function ocultarMenuGeneroCel(id) {
+    var menuBox = document.getElementById(id);
+
+    menuBox.style.width = '0';
+    menuBox.style.padding = '0';
+    
+}
+
+
+
+function mostrarMenuGeneroCel(id){
+    let menuBox = document.getElementById(id);
+    menuBox.style.display = 'block';
+    menuBox.style.width='100vw';
+    menuBox.style.padding='16px';
+    //document.getElementById('cerrar').classList.add('d-none');
 }
 

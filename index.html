@@ -25,16 +25,75 @@
 
         <nav id="menu" class="container-fluid menu">
             <ul>
-                <li>
-                    <a href="#">Hombre</a>
-                    <i class="ti ti-chevron-down"></i>
-                   
-                <li><a href="#">Mujer </a><i class="ti ti-chevron-down"></i> </li>
-                <li><a href="#">Nosotros</a><i class="ti ti-chevron-down"></i></li>
-                <li><a href="#">Novedades</a><i class="ti ti-chevron-down"></i></li>
-                <li><a href="#">Contacto</a><i class="ti ti-chevron-down"></i></li>
-                <input class="d-lg-flex d-none" type="search" placeholder=" Buscar...">
+                <li  class="position-relative ">
+                    <a onclick="mostrarMenuGeneroCel('hombre-cel')" id="link-hombre" href="#">Hombre</a><i class="ti ti-chevron-down"></i>
+                   <div class="separador-invisible"></div>
+                    <div id="hombre-cel" class="menu-hombre shadow">
+                        <div class=" d-flex justify-content-around mt-3">
+                            <ul>
+                                <li>Casual<i class="ti ti-chevron-down"></i></li>
+                                <li>Abrigos</li>
+                                <li>Deportivo</li>
+                                <li>Pantalones</li>
+                                <li>Remeras</li>
+                            </ul>
+                            <ul>
+                                <li>Formal<i class="ti ti-chevron-down"></i></li>
+                                <li>Chaquetas</li>
+                                <li>Camisetas</li>
+                                <li>Trajes</li>
+                                <li>Pantalones</li>
+                            </ul>
+                        </div>
+                        <div class="ofertas mt-3 p-3">
+                            <h2 class="">Ofertas de Invierno</h2>
+                            <p class="m-0">Desde el 50% de Descuento</p>
+                        </div>
+                        <div onclick="ocultarMenuGeneroCel('hombre-cel')" class="ofertas mt-3 p-3">
+                            <p  class="m-0">Atras</p>
+                        </div>
+                    </div>
+
+                    
+                </li>
+                
+                </li>
+                <li class="position-relative">
+                    <a  onclick="mostrarMenuGeneroCel('mujer-cel')"  href="#">Mujer</a><i class="ti ti-chevron-down"></i>
+                    <div class="separador-invisible"></div>
+                    <div style="top: -70px;" id="mujer-cel" class="menu-hombre shadow">
+                        <div class=" d-flex justify-content-around mt-3">
+                            <ul>
+                                <li>Casual<i class="ti ti-chevron-down"></i></li>
+                                <li>Remeras</li>
+                                <li>Bikinis</li>
+                                <li>Juvenil</li>
+                                <li>Deportivo</li>
+                            </ul>
+                            <ul>
+                                <li>Formal/Noche<i class="ti ti-chevron-down"></i></li>
+                                <li>Vestidos</li>
+                                <li>Accesorios</li>
+                                <li>Trajes</li>
+                                <li>Nueva Temporada</li>
+                            </ul>
+                        </div>
+                        <div class="ofertas mt-3 p-3">
+                            <h2 class="">Ofertas de Otoño</h2>
+                            <p class="m-0">Desde el 50% de Descuento</p>
+                        </div>
+                        <div onclick="ocultarMenuGeneroCel('mujer-cel')" class="ofertas mt-3 p-3">
+                            <p  class="m-0">Atras</p>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">Nosotros</a><i class="ti ti-chevron-down"></i><div class="separador-invisible"></div></li>
+                <li><a href="#">Novedades</a><i class="ti ti-chevron-down"></i><div class="separador-invisible"></div></li>
+                <li><a href="#">Contacto</a><i class="ti ti-chevron-down"></i><div class="separador-invisible"></div></li>
+                
+                <input class="d-lg-flex d-none pb-1" type="search" placeholder=" Buscar...">
                 <label for="search"><i class="ti ti-search d-lg-flex d-none"></i></label>
+                <div class="separador-invisible"></div>
             </ul>
         </nav>
 

@@ -270,7 +270,9 @@ footer>div>ul>li>a:hover {
     left: -24px;
     width: 390px;
     background: #fff;
+    padding: 16px;
     display: none;
+   
 
 
 }
@@ -440,10 +442,30 @@ footer>div>ul>li>a:hover {
 
 
 
-    @media screen and (max-width:576px) {
+    @media screen and (max-width:575px) {
         .img-r {
             width: 62.5%;
         }
+
+        .menu-hombre{
+            width: 100vw;
+            z-index: 99999;
+            height: 100vh;
+            position: absolute;
+            top: -20px;
+            overflow: hidden;
+            width: 0;
+            transition: .3s;
+            padding: 0;
+            display: block;
+            padding: 0;
+           
+        }
+
+      
+           
+            
+            
     }
 
 }
