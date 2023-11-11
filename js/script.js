@@ -68,3 +68,32 @@ function mostrarMenuGeneroCel(id){
     //document.getElementById('cerrar').classList.add('d-none');
 }
 
+function mostrarHora() {
+    var d = new Date();
+    let hora = d.getHours();
+    let min = d.getMinutes();
+    let seg = d.getSeconds();
+    let mod = 'a.m';
+    
+    if(hora > 12){
+        mod = 'p.m'
+    }
+
+    if (hora == 12){
+        hora = 12;
+    }
+
+    if (min <= 9){
+       min="0"+min;  
+    }
+
+    if(seg <= 9){
+        seg='0'+seg;
+    }
+
+
+    document.getElementById('clock').value = hora + ' : ' + min + ' : ' + seg + ' ' + mod;
+    setTimeout('mostrarHora()',1000)
+}
+
+mostrarHora();
