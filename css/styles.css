@@ -11,6 +11,10 @@
     --box-link: #ababab;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 .container {
     max-width: 1200px;
 }
@@ -326,8 +330,15 @@ button{
     
 }
 
+.reloj{
+    display: flex;
+    justify-content: flex-end;
+}
 
-
+#clock{
+   text-align: center;
+   width: 175px;
+}
 
 
 
@@ -367,6 +378,9 @@ button{
 @media screen and (max-width:850.18px){
     .segundo{
         margin-bottom: 30px;
+    }
+    .fecha-container{
+        display: none;
     }
 }
 
@@ -503,6 +517,10 @@ button{
     footer>div>ul>li>a,
     .tf {
         font-size: 18px;
+    }
+
+    .reloj{
+        justify-content: center;
     }
 
 

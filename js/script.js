@@ -96,4 +96,17 @@ function mostrarHora() {
     setTimeout('mostrarHora()',1000)
 }
 
+function mostrarFecha(){
+    let dias = ['Lunes','Martes','Miercoles','Jueves','Viernes','Sabado','Domingo'];
+    let fecha = new Date();
+    let getDay = fecha.getDay();
+    let dia = dias[getDay-1];
+    let numDia = fecha.getDate();
+    let meses = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre']
+    let mes = meses[fecha.getMonth()]
+    let year = fecha.getFullYear()
+    document.getElementById('fecha').innerHTML=dia + ' ' + numDia + ' de ' + mes + ' de ' + year; 
+   
+}
 mostrarHora();
+mostrarFecha();
