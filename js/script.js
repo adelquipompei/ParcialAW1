@@ -1,7 +1,7 @@
 
 
 let menu = document.getElementById('menu');
-//let menuHombre = document.getElementById('menu-hombre');
+let cerrar = false
 
 
 
@@ -21,7 +21,11 @@ function cerrarMenu() {
     menu.style.padding = '0';
     document.getElementById('men').classList.remove('d-none');
     document.getElementById('cerrar').classList.add('d-none');
-    document.body.style.overflowY = 'visible';
+    cerrar = true
+    if(cerrar){
+        document.body.style.overflowY = 'visible';
+    }
+
 }
 
 function mostrarCaja(bxRopaId, imagenID) {
